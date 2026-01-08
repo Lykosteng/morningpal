@@ -19,26 +19,7 @@
 
 ## 🚀 两种使用方式
 
-### 1️⃣ Chrome 扩展（推荐）
-
-适合喜欢在浏览器中使用的用户，支持定时提醒。
-
-```
-chrome-extension/
-├── manifest.json      # 扩展配置
-├── popup.html/js      # 弹出窗口
-├── options.html/js    # 设置页面
-├── background.js      # 后台服务（提醒功能）
-└── icons/             # 图标
-```
-
-**安装方法：**
-1. 打开 Chrome，访问 `chrome://extensions/`
-2. 开启「开发者模式」
-3. 点击「加载已解压的扩展程序」
-4. 选择 `chrome-extension` 文件夹
-
-### 2️⃣ 命令行版本（CLI）
+### 1️⃣ 命令行版本（CLI）（推荐）
 
 适合喜欢在终端工作的开发者。
 
@@ -78,6 +59,26 @@ MorningPal 使用 [Stepfun](https://platform.stepfun.com/) 的 AI 服务。你�
 ```env
 STEPFUN_API_KEY=你的API密钥
 ```
+
+### 1️⃣ Chrome 扩展（推荐）
+
+适合喜欢在浏览器中使用的用户，支持定时提醒。
+
+```
+chrome-extension/
+├── manifest.json      # 扩展配置
+├── popup.html/js      # 弹出窗口
+├── options.html/js    # 设置页面
+├── background.js      # 后台服务（提醒功能）
+└── icons/             # 图标
+```
+
+**安装方法：**
+1. 打开 Chrome，访问 `chrome://extensions/`
+2. 开启「开发者模式」
+3. 点击「加载已解压的扩展程序」
+4. 选择 `chrome-extension` 文件夹
+
 
 ## 📁 项目结构
 
