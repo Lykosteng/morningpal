@@ -55,13 +55,6 @@ python3 morningpal.py
 ./start.sh
 ```
 
-## 📸 截图
-
-<p align="center">
-  <img src="chrome-extension/promo/screenshot-2.png" width="400" alt="MorningPal 设置">
-  <img src="chrome-extension/promo/screenshot-3.png" width="400" alt="MorningPal 功能">
-</p>
-
 ## 🔧 配置
 
 ### 获取 API Key
