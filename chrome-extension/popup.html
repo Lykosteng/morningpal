@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MorningPal</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <header class="header">
+      <div class="header-left">
+        <span class="logo">🧭</span>
+        <div class="title-group">
+          <h1>小航</h1>
+          <span class="subtitle">你的早安领航员</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="streak" id="streak">🔥 0天</span>
+        <button class="settings-btn" id="settingsBtn">⚙️</button>
+      </div>
+    </header>
+
+    <!-- 登录视图 -->
+    <div class="view" id="loginView">
+      <div class="auth-form">
+        <h2>欢迎登船 ⛵</h2>
+        <input type="email" id="email" placeholder="邮箱" />
+        <input type="password" id="password" placeholder="密码" />
+        <button class="btn primary" id="loginBtn">登录</button>
+        <button class="btn secondary" id="showRegisterBtn">注册新账户</button>
+        <p class="error" id="loginError"></p>
+      </div>
+    </div>
+
+    <!-- 注册视图 -->
+    <div class="view hidden" id="registerView">
+      <div class="auth-form">
+        <h2>注册账户</h2>
+        <input type="email" id="regEmail" placeholder="邮箱" />
+        <input type="password" id="regPassword" placeholder="密码" />
+        <button class="btn primary" id="registerBtn">注册</button>
+        <button class="btn secondary" id="showLoginBtn">返回登录</button>
+        <p class="error" id="registerError"></p>
+      </div>
+    </div>
+
+    <!-- 对话视图 -->
+    <div class="view hidden" id="chatView">
+      <div class="messages" id="messages"></div>
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="和小航说说今天的感受..." />
+        <button class="send-btn" id="sendBtn">→</button>
+      </div>
+    </div>
+
+    <!-- 加载状态 -->
+    <div class="loading hidden" id="loading">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

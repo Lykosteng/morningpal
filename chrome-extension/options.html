@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MorningPal 设置</title>
+  <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚙️ MorningPal 设置</h1>
+    </header>
+
+    <section class="settings-group">
+      <h2>提醒设置</h2>
+      
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="icon">⏰</span>
+          <div>
+            <label>每日提醒时间</label>
+            <p>设置你希望收到提醒的时间</p>
+          </div>
+        </div>
+        <input type="time" id="reminderTime" value="09:00" />
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="icon">📅</span>
+          <div>
+            <label>周末提醒</label>
+            <p>周六周日也发送提醒</p>
+          </div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="weekendReminder" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="icon">🔔</span>
+          <div>
+            <label>启用提醒</label>
+            <p>开启或关闭每日提醒</p>
+          </div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="reminderEnabled" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="settings-group">
+      <h2>账户</h2>
+      <div class="setting-item">
+        <div class="setting-info">
+          <span class="icon">👤</span>
+          <div>
+            <label id="userEmail">未登录</label>
+            <p id="userStatus">请在弹窗中登录</p>
+          </div>
+        </div>
+        <button class="btn" id="logoutBtn">退出登录</button>
+      </div>
+    </section>
+
+    <button class="btn primary save-btn" id="saveBtn">💾 保存设置</button>
+    <p class="save-status" id="saveStatus"></p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
