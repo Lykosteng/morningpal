@@ -46,21 +46,7 @@ MorningPal 使用 [Stepfun](https://platform.stepfun.com/) 的 AI 服务。你�
 2. 注册账号并创建 API Key
 3. 将 API Key 配置到扩展设置或环境变量中
 
-### Chrome 扩展配置
-
-1. 点击扩展图标
-2. 登录或注册账户
-3. 在设置页面配置提醒时间
-
-### CLI 配置
-
-在 `cli` 目录创建 `.env` 文件：
-
-```env
-STEPFUN_API_KEY=你的API密钥
-```
-
-### 1️⃣ Chrome 扩展（推荐）
+### 2️⃣ Chrome 扩展（实验中暂时不推荐）
 
 适合喜欢在浏览器中使用的用户，支持定时提醒。
 
@@ -78,6 +64,21 @@ chrome-extension/
 2. 开启「开发者模式」
 3. 点击「加载已解压的扩展程序」
 4. 选择 `chrome-extension` 文件夹
+
+
+### Chrome 扩展配置
+
+1. 点击扩展图标
+2. 登录或注册账户
+3. 在设置页面配置提醒时间
+
+### CLI 配置
+
+在 `cli` 目录创建 `.env` 文件：
+
+```env
+STEPFUN_API_KEY=你的API密钥
+```
 
 
 ## 📁 项目结构
